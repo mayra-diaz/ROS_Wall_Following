@@ -1,0 +1,11 @@
+<launch>
+  
+    <include file="$(find stingray_sim)/launch/wall_following_v1.launch"></include>
+     <node
+      pkg="stingray_sim"
+      name="robot_movement"
+      type="robot_movement.py"
+      output="screen"
+    />
+  
+</launch>
